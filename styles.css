@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'DynaPuff';
+    src: url("/fonts/DynaPuff/DynaPuff-VariableFont_wdth\,wght.ttf");
+    /*Can add the other extensions for this font here*/
+}
+
+.navbar {
+    background: linear-gradient(45deg, #2C2B30, #4F4F51);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'DynaPuff', sans-serif;
+}
+
+body {
+    background-color: #D6D6D6;
+}
+
+h1 {
+    color: #F58F7C;
+}
