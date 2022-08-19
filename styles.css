@@ -4,18 +4,6 @@
     /*Can add the other extensions for this font here*/
 }
 
-.navbar {
-    background: linear-gradient(45deg, #2C2B30, #4F4F51);
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,10 +11,48 @@
     font-family: 'DynaPuff', sans-serif;
 }
 
+.navbar {
+    background-color: #F58F7C;
+    height: 120px;
+}
+
+.navbar_header {
+    position: relative;
+    top: 15px;
+    text-align: center;
+    color: #2C2B30
+}
+
+#navbar_h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#navbar_h2 {
+    font-size: 25px;
+}
+
 body {
-    background-color: #D6D6D6;
+    background: linear-gradient(45deg, #F2C4CE, #D6D6D6);
+    
 }
 
 h1 {
-    color: #F58F7C;
+    color: #2C2B30;
+}
+
+p {
+    color: #4F4F51;
+    font-size: 15px;
+}
+
+.intro {
+    padding: 0 15px;
+}
+
+#intro_h1 {
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
