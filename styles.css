@@ -56,9 +56,17 @@ p {
     background-color: #2C2B30;
     font-size: 35px;
     border-radius: 100%;
-    padding: 10px;
+    padding: 2.5px 9.5px;
     position: fixed;
-    box-shadow: 0 1px 2px darkslategray;
+    cursor: pointer;
+}
+
+.page_btn:hover {
+    background-color: #4F4F51;
+}
+
+.page_btn:active {
+    box-shadow: 0 2px 4px #4F4F51;
 }
 
 #next_btn {
