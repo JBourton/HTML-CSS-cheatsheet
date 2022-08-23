@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/styles.css">
     <script src="/carousel.js"></script>
 </head>
-<body>
+<body onload="plusSlides(0)">
     <nav class="navbar">
         <h1 class="navbar_header" id="navbar_h1">HTML & CSS Cheatsheet</h1>
         <h2 class="navbar_header" id="navbar_h2">By Joshua Bourton</h2>
@@ -18,7 +18,22 @@
             <!--The next and previous buttons-->
             <button class="page_btn" id="next_btn" onclick="plusSlides(1)">&#10095;</button>
             <button class="page_btn" id="previous_btn" onclick="plusSlides(-1)">&#10094;</button>
-            <!--The HTML content page-->
+            <!--The introduction slide-->
+            <div class="page_container">
+                <h1 id="intro_h1"><u>Introduction</u></h1>
+                <br>
+                <p>This website was designed by me in an effort to reinforce my current knowledge of HTML and
+                    CSS. It has helped me in several ways; by forcing me to go over the necesary content by writing
+                    it down, and by getting first hand practice programming the actual website using
+                    the content in those notes.
+                </p>
+                <br>
+                <p>The first slide helpful information on the tags and attributes required to build an HTML table</p>
+                <br>
+                <p>The second slide contains CSS selectors that are used to help style text and more.</p>
+            <div class="MessageInfo">1 / 3</div>
+            </div>
+            <!--The HTML content slide-->
             <div class="page_container">
                 <h1 class="main_h1" id="table_title">Table Tags</h1>
                 <p>The following tables contain useful information on tags and attributes in an HTML table</p>
@@ -85,17 +100,47 @@
                         </tr>           
                     </tbody>
                 </table>
-                <div class="MessageInfo">1 / 3</div>
-            </div>
-            <!--The CSS content page-->
-            <div class="page_container">
-                <h1 class="main_h1">CSS text manipulation</h1>
-                <p>The following content shows ways that a programmar may manipulate text items using CSS</p>
                 <div class="MessageInfo">2 / 3</div>
             </div>
+            <!--The CSS content slide-->
             <div class="page_container">
-                <h1 class="main_h1">This is a placeholder webpage</h1>
-                <p>Lorum Ipsum</p>
+                <h1 class="main_h1">CSS text manipulation</h1>
+                <br>
+                <p class="">The following content shows ways that a programmar may manipulate text items using CSS</p>
+                <table>
+                    <thead>
+                        <th>Selector</th>
+                        <th>Example</th>
+                        <th>Example Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">.class</td>
+                            <td>.intro</td>
+                            <td>Selects all elements with class="intro"</td>
+                        </tr>
+                        <tr>
+                            <td class="code">#id</td>
+                            <td>#firstname</td>
+                            <td>Selects the element with id="firstname"</td>
+                        </tr>
+                        <tr>
+                            <td class="code">:active</td>
+                            <td>a:active</td>
+                            <td>Selects the active link</td>
+                        </tr>
+                        <tr>
+                            <td class="code">::before</td>
+                            <td>a::before</td>
+                            <td>Insert something before the content of each <p> element</td>
+                        </tr>
+                        <tr>
+                            <td class="code">:first-child</td>
+                            <td>p:first-child</td>
+                            <td>Selects every &#60;p&#62; element that is the first child of its parent</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <div class="MessageInfo">3 / 3</div>
             </div>
             <!--The carousel dots-->
